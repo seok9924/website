@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World</title>
     <link rel="stylesheet" href="./css/slide.css">
+    <link rel="stylesheet" href="./css/gallery.css">
     
 
     <script src="https://kit.fontawesome.com/0b5f2518eb.js" crossorigin="anonymous"></script>
@@ -22,7 +23,7 @@
 
     <div class="topnav">
         <a  href="index.html"><i class="fa-solid fa-house"></i></a>
-        <a  href="#">로그인</a>
+        <a  href="calcul.html">로그인</a>
         <a href="board.html">게시판</a>
         <a href="guhyeon.html">개인구현</a>
         <a class="active" href="eating.html">ㅠ</a>
@@ -30,7 +31,7 @@
       </div>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">로그인</a>
+        <a href="calcul.html">로그인</a>
         <a href="board.html">게시판</a>
         <a href="guhyeon.html">개인구현</a>
         <a href="eating.html">ㅠ</a>
@@ -44,6 +45,52 @@
 
 
 <script type="text/javascript" src="./js/slide.js"></script>
-    
+<style>
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+  }
+  </style>
+  <!-- The grid: four columns -->
+<div class="row">
+  <div class="column">
+    <!-- <img src="./images/1.jpg" alt="Nature" onclick="myFunction(this);"> -->
+    <video src="./videos/brotato.mp4" autoplay muted onclick="myFunction(this);"></video>
+  </div>
+  <div class="column">
+    <video src="./videos/lolchess.mp4" autoplay muted onclick="myFunction(this);"></video>
+    <!-- <img src="./images/2.jpg" alt="Snow" onclick="myFunction(this);"> -->
+  </div>
+  <div class="column">
+    <img src="./images/3.jpg" alt="Mountains" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="./images/1.jpg" alt="Lights" onclick="myFunction(this);">
+  </div>
+</div>
+
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:100%">
+  <video id="expandingVideo"  autoplay muted style="width:100%"></video>
+
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
+</div>
+<script type="text/javascript" src="./js/gallery.js"></script>
+  
+  <div class="footer">
+    <p>Footer</p>
+  </div>
 </body>
 </html>
