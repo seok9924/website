@@ -39,6 +39,7 @@ https://seok9924.github.io/website/
 ** 느낀점
 - 프론트 엔드는 상당히 숙달이 되어야 좋다고 생각한다
 - header footer를 불러오지 않으니 노가다가 심함
+- 수많은 엘리멘트에 대해서 class 나 id의 이름을 짓는 정확한 기준 필요 평소 처럼 막 지으니 문제가 생김
 
 <div align='center'>
   <img src="https://api.cdn.visitjeju.net/photomng/imgpath/201904/12/c43b23a1-2d6c-48cb-b42b-14b5e54efe3a.jpg" width="750">
