@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello World</title>
+  <link rel="stylesheet" href="./css/slide.css">
+
+  <script src="https://kit.fontawesome.com/0b5f2518eb.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://kit.fontawesome.com/0b5f2518eb.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/css.css">
+
+  <link rel="stylesheet" href="css/login.css">
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+  <div class="topnav">
+    <a href="index.html"><i class="fa-solid fa-house"></i></a>
+    <a class="active" href="#">로그인</a>
+    <a href="board.html">게시판</a>
+    <a href="guhyeon.html">개인구현</a>
+    <a href="eating.html">먹기</a>
+
+  </div>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">로그인</a>
+    <a href="board.html">게시판</a>
+    <a href="guhyeon.html">개인구현</a>
+    <a href="eating.html">먹기</a>
+  </div>
+
+  <!-- Use any element to open the sidenav -->
+  <span onclick="openNav()"><i class="fa-solid fa-burger"></i></span>
+
+  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+  <div class="board_wrap">
+    <div class="board_title">
+      <strong>로그인</strong>
+      <p>서비스를 사용하기 위해 로그인해주세요.</p>
+    </div>
+    <div class="board_list_wrap">
+      <div class="board_list">
+        <div class="top">
+          <div class="num">회원번호</div>
+          <div class="title">회원소개</div>
+          <div class="writer">회원이름</div>
+          <div class="date">등록일</div>
+
+        </div>
+
+        <div>
+          <div class="num">1</div>
+          <div class="title">만나서 반갑습니다</div>
+          <div class="writer">최세현</div>
+          <div class="date">2021.1.15</div>
+        </div>
+      </div>
+
+      <div class="bt_wrap">
+
+        <button id='submitBtn'>회원가입<button>
+
+            <button id="loginBtn">로그인<button>
+
+      </div>
+      <div class="login hidden" id="loginform">
+        로그인
+        <div id="login_id">
+
+          <input type="text" placeholder="이름" />
+          <p>-</p>
+        </div>
+        <div id="login_pw">
+          <input type="text" placeholder="pw" />
+          <p>-</p>
+        </div>
+
+        <button id="loginreal">Log in</button>
+        <h1 id="welcome"></h1>
+
+      </div>
+
+    </div>
+    <div class="submitForm hidden" id="submitform">
+      회원가입
+      <div id="submit_id">
+        <input type="text" placeholder="이름" />
+        <p>-</p>
+      </div>
+      <div id="submit_pw">
+        <input type="text" placeholder="pw" />
+        <p>-</p>
+      </div>
+      <div id="submit_info">
+        <input type="text" placeholder="자기소개" />
+        <p>-</p>
+      </div>
+      <div id="enrollBtn">
+        <button>등록</button>
+        <h1 id="greeting"></h1>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  </div>
+
+  <script type="text/javascript" src="./js/login.js"></script>
+
+
+</body>
+
+</html>
